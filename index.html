@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dent Go | Kit Dental Portátil de Viaje</title>
+  <meta name="description" content="Kit dental completo y portátil Dent Go por solo $90 MXN. Incluye cepillo, pasta Colgate, enjuague bucal, hilo dental y peine en estuche impermeable. Pídelo por WhatsApp.">
+  
+  <!-- Tailwind CSS para diseño moderno y responsivo -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Fuente Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+    }
+    /* Animación suave para el acordeón de preguntas frecuentes */
+    details > summary {
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+    details[open] summary svg {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-sky-600 selection:text-white">
+
+  <!-- Barra de Navegación -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-xl bg-sky-600 flex items-center justify-center text-white font-extrabold text-xl shadow-sm">
+          D
+        </div>
+        <span class="font-extrabold text-xl tracking-tight text-slate-900">Dent<span class="text-sky-600">Go</span> 🦷</span>
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="#incluye" class="hover:text-sky-600 transition-colors">¿Qué incluye?</a>
+        <a href="#precio" class="hover:text-sky-600 transition-colors">Precio</a>
+        <a href="#como" class="hover:text-sky-600 transition-colors">Cómo pedir</a>
+        <a href="#faq" class="hover:text-sky-600 transition-colors">Dudas</a>
+      </nav>
+
+      <a 
+        href="#pedido" 
+        class="bg-sky-600 hover:bg-sky-700 text-white text-sm font-bold px-5 py-2.5 rounded-full transition-all shadow-sm hover:shadow"
+      >
+        Pedir ahora
+      </a>
+    </div>
+  </header>
+
+  <!-- Sección Principal (Hero) -->
+  <section id="inicio" class="relative overflow-hidden pt-10 pb-16 lg:pt-16 lg:pb-24 bg-gradient-to-b from-sky-50/70 to-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Columna de Texto -->
+        <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+            <span>✈️ Ideal para viajes, oficina y escuela</span>
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1]">
+            Tu kit dental completo, <span class="text-sky-600">siempre contigo.</span>
+          </h1>
+          
+          <p class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            Higiene, frescura y cuidado en un solo estuche transparente e impermeable. Viaja, trabaja o sal a donde quieras con una sonrisa saludable.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a 
+              href="#pedido" 
+              class="w-full sm:w-auto px-8 py-4 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-2xl shadow-lg shadow-sky-600/25 transition-all transform hover:-translate-y-0.5 text-center"
+            >
+              Agendar mi pedido
+            </a>
+            <a href="#incluye" class="w-full sm:w-auto px-8 py-4 bg-white hover:bg-slate-100 text-slate-700 font-semibold rounded-2xl border border-slate-200 transition-colors text-center">
+              Ver qué incluye
+            </a>
+          </div>
+
+          <div class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-slate-600 font-medium">
+            <span class="bg-white px-3 py-1.5 rounded-xl border border-slate-200/80 shadow-xs">
+              <strong class="text-sky-600 font-extrabold">$90 MXN</strong> por kit
+            </span>
+            <span class="flex items-center gap-1.5">✅ Estuche reutilizable</span>
+            <span class="flex items-center gap-1.5">✅ Pedidos por WhatsApp</span>
+          </div>
+        </div>
+
+        <!-- Columna de Imagen Principal (kit-dentgo.jpg) -->
+        <div class="lg:col-span-6">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 min-h-[340px] flex items-center justify-center">
+            <img 
+              id="hero-img"
+              src="kit-dentgo.jpg" 
+              alt="Kit dental portátil Dent Go en estuche transparente con cierre impermeable" 
+              class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
+            >
+            <div class="absolute bottom-4 left-4 right-4 glass-card p-4 rounded-2xl border border-white/60 shadow-lg flex items-center justify-between">
+              <div>
+                <p class="text-xs font-bold text-sky-600 uppercase">Todo en uno</p>
+                <p class="text-sm font-bold text-slate-900">Dental Care Travel Set</p>
+              </div>
+              <span class="bg-emerald-100 text-emerald-800 text-xs font-extrabold px-3 py-1 rounded-full">
+                Entrega rápida
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección ¿Qué incluye? -->
+  <section id="incluye" class="py-20 bg-white border-y border-slate-200/70">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-sky-600 font-bold text-sm uppercase tracking-wider">Contenido Completo</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">¿Qué incluye tu kit Dent Go?</h2>
+        <p class="mt-4 text-slate-600">Cada elemento ha sido seleccionado para brindarte frescura y cuidado personal completo en cualquier momento del día.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Item 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-sky-200 transition-all hover:shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center text-2xl mb-4">🪥</div>
+          <h3 class="font-bold text-lg text-slate-900">Cepillo Dental Ergonómico</h3>
+          <p class="text-sm text-slate-600 mt-2">Cerdas suaves de limpieza profunda diseñadas para cuidar tus encías y esmalte.</p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-sky-200 transition-all hover:shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-red-100 text-red-600 flex items-center justify-center text-2xl mb-4">🧴</div>
+          <h3 class="font-bold text-lg text-slate-900">Pasta Dental Colgate</h3>
+          <p class="text-sm text-slate-600 mt-2">Tamaño portátil ideal para llevar en mochila, bolso o maleta de cabina sin derrames.</p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-sky-200 transition-all hover:shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center text-2xl mb-4">💧</div>
+          <h3 class="font-bold text-lg text-slate-900">Enjuague Bucal Cool Mint</h3>
+          <p class="text-sm text-slate-600 mt-2">Aliento fresco al instante con fórmula refrescante en botella compacta segura.</p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-sky-200 transition-all hover:shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-4">🧵</div>
+          <h3 class="font-bold text-lg text-slate-900">Aplicadores de Hilo Dental</h3>
+          <p class="text-sm text-slate-600 mt-2">Incluye prácticos palillos con hilo dental (floss picks) para limpieza interdental rápida.</p>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-sky-200 transition-all hover:shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-slate-200 text-slate-700 flex items-center justify-center text-2xl mb-4">🪮</div>
+          <h3 class="font-bold text-lg text-slate-900">Peine de Bolsillo</h3>
+          <p class="text-sm text-slate-600 mt-2">Un extra indispensable para mantener tu imagen impecable antes de cualquier reunión.</p>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-sky-200 transition-all hover:shadow-md">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-4">👝</div>
+          <h3 class="font-bold text-lg text-slate-900">Estuche Impermeable Zip</h3>
+          <p class="text-sm text-slate-600 mt-2">Bolsa transparente con cierre hermético resistente al agua, fácil de limpiar y reutilizar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Entrega / Uso Real (entrega-kit.jpg) -->
+  <section id="galeria" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-slate-900 rounded-3xl overflow-hidden shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+          
+          <!-- Imagen de entrega (entrega-kit.jpg) -->
+          <div class="lg:col-span-5 h-full min-h-[320px] bg-slate-800">
+            <img 
+              id="entrega-img"
+              src="entrega-kit.jpg" 
+              alt="Entrega en mano del kit dental portátil Dent Go compacto" 
+              loading="lazy"
+              class="w-full h-96 lg:h-full object-cover"
+            >
+          </div>
+
+          <!-- Texto y Llamado a la acción -->
+          <div class="lg:col-span-7 p-8 sm:p-12 lg:p-16 text-white space-y-6">
+            <span class="inline-block px-3 py-1 rounded-full bg-sky-500/20 text-sky-300 text-xs font-bold uppercase tracking-wider">
+              Listo para acompañarte
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+              Tamaño perfecto para la palma de tu mano.
+            </h2>
+            <p class="text-slate-300 text-lg leading-relaxed">
+              No ocupa espacio innecesario y evita que tus artículos de higiene se mezclen o ensucien dentro de tu mochila o equipaje. Pídelo hoy mismo y recíbelo rápido.
+            </p>
+            
+            <div class="pt-2 flex flex-col sm:flex-row gap-4">
+              <a 
+                href="#pedido" 
+                class="inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-8 py-4 rounded-2xl shadow-lg shadow-emerald-500/25 transition-all"
+              >
+                <span>Personalizar mi pedido ahora</span>
+              </a>
+              <a 
+                href="https://api.whatsapp.com/send?phone=524492560788&text=Hola%2C%20me%20interesa%20pedir%20un%20kit%20dental%20Dent%20Go" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-6 py-4 rounded-2xl transition-all"
+              >
+                <span>Chat directo (449 256 0788)</span>
+              </a>
+            </div>
+            <p class="text-xs text-slate-400">
+              * También disponible para pedidos por volumen para hoteles, clínicas dentales, eventos o empresas.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Precio -->
+  <section id="precio" class="py-20 bg-slate-900 text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-sky-400 font-bold text-sm uppercase tracking-wider">Precio Accesible</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold mt-2">Un precio pensado para ti</h2>
+      <p class="text-slate-300 mt-3 max-w-lg mx-auto">Todo lo necesario para cuidar tu sonrisa fuera de casa sin gastar de más.</p>
+
+      <div class="max-w-md mx-auto mt-10 bg-white text-slate-900 rounded-3xl p-8 sm:p-10 shadow-2xl border-4 border-sky-500/30">
+        <span class="inline-block bg-sky-100 text-sky-700 text-xs font-extrabold uppercase px-3 py-1 rounded-full mb-4">
+          Kit Completo Dent Go
+        </span>
+        <div class="flex items-baseline justify-center gap-1 my-2">
+          <span class="text-5xl sm:text-6xl font-extrabold text-sky-600">$90</span>
+          <span class="text-slate-500 font-bold text-lg">MXN / kit</span>
+        </div>
+        
+        <ul class="mt-6 mb-8 space-y-3 text-left text-slate-600 font-medium border-t border-slate-100 pt-6">
+          <li class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold">✓</span>
+            Estuche transparente reutilizable con cierre
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold">✓</span>
+            Cepillo, pasta Colgate y enjuague bucal
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold">✓</span>
+            Aplicadores de hilo dental y peine
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold">✓</span>
+            Atención directa por WhatsApp
+          </li>
+        </ul>
+
+        <a 
+          href="#pedido" 
+          class="block w-full py-4 bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-2xl shadow-lg shadow-sky-600/25 transition-all text-center"
+        >
+          Pedir mis kits ahora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Cómo funciona (3 Pasos) -->
+  <section id="como" class="py-20 bg-white border-b border-slate-200/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-sky-600 font-bold text-sm uppercase tracking-wider">Súper Fácil</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">¿Cómo hacer tu pedido?</h2>
+        <p class="text-slate-600 mt-3">En solo 3 pasos sencillos agendamos la entrega de tus kits Dent Go.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Paso 1 -->
+        <div class="relative bg-slate-50 rounded-2xl p-8 border border-slate-200/70">
+          <div class="w-10 h-10 rounded-full bg-sky-600 text-white font-extrabold flex items-center justify-center text-lg shadow-md mb-5">
+            1
+          </div>
+          <h3 class="font-bold text-xl text-slate-900 mb-2">Elige cuántos kits</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Selecciona la cantidad de kits que necesitas y calcula tu total al instante en el formulario.</p>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="relative bg-slate-50 rounded-2xl p-8 border border-slate-200/70">
+          <div class="w-10 h-10 rounded-full bg-sky-600 text-white font-extrabold flex items-center justify-center text-lg shadow-md mb-5">
+            2
+          </div>
+          <h3 class="font-bold text-xl text-slate-900 mb-2">Agenda tu entrega</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Ingresa tu nombre, punto de entrega o dirección, fecha y horario preferido.</p>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="relative bg-slate-50 rounded-2xl p-8 border border-slate-200/70">
+          <div class="w-10 h-10 rounded-full bg-emerald-500 text-white font-extrabold flex items-center justify-center text-lg shadow-md mb-5">
+            3
+          </div>
+          <h3 class="font-bold text-xl text-slate-900 mb-2">Confirma por WhatsApp</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Se abrirá tu WhatsApp con el mensaje listo para enviarlo al <strong>449 256 0788</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Formulario de Pedido Personalizado -->
+  <section id="pedido" class="py-20 bg-sky-50/70">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-sky-100 text-sky-700 text-xs font-bold uppercase tracking-wider mb-3">
+          Pedido Rápido
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Agenda tu pedido Dent Go</h2>
+        <p class="text-slate-600 mt-3 max-w-xl mx-auto">Completa los datos de entrega y te enviaremos directo a WhatsApp con el resumen listo para confirmar.</p>
+      </div>
+
+      <form id="form-pedido" class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200/80 space-y-5">
+        
+        <!-- Selección de Cantidad con botones + y - -->
+        <div>
+          <label for="cantidad" class="block text-sm font-bold text-slate-700 mb-2">Cantidad de kits ($90 MXN c/u)</label>
+          <div class="flex items-center gap-3">
+            <button 
+              type="button" 
+              id="btn-menos" 
+              aria-label="Restar un kit"
+              class="w-12 h-12 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-extrabold text-xl flex items-center justify-center transition-colors"
+            >
+              −
+            </button>
+            <input 
+              id="cantidad" 
+              type="number" 
+              min="1" 
+              max="50" 
+              value="1" 
+              required
+              class="w-full h-12 text-center font-extrabold text-lg text-slate-900 border border-slate-300 rounded-xl focus:outline-none focus:border-sky-600 focus:ring-2 focus:ring-sky-600/20"
+            >
+            <button 
+              type="button" 
+              id="btn-mas" 
+              aria-label="Sumar un kit"
+              class="w-12 h-12 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-extrabold text-xl flex items-center justify-center transition-colors"
+            >
+              +
+            </button>
+          </div>
+        </div>
+
+        <!-- Nombre del Cliente -->
+        <div>
+          <label for="nombre" class="block text-sm font-bold text-slate-700 mb-1.5">Tu nombre completo *</label>
+          <input 
+            id="nombre" 
+            type="text" 
+            placeholder="Ej. Ana López" 
+            required
+            class="w-full px-4 py-3 border border-slate-300 rounded-xl text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-sky-600 focus:ring-2 focus:ring-sky-600/20"
+          >
+        </div>
+
+        <!-- Punto de entrega o dirección -->
+        <div>
+          <label for="direccion" class="block text-sm font-bold text-slate-700 mb-1.5">Punto de entrega o dirección *</label>
+          <input 
+            id="direccion" 
+            type="text" 
+            placeholder="Ej. Plaza Patria, UAA, o Calle y Colonia" 
+            required
+            class="w-full px-4 py-3 border border-slate-300 rounded-xl text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-sky-600 focus:ring-2 focus:ring-sky-600/20"
+          >
+        </div>
+
+        <!-- Fecha y Horario -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="fecha" class="block text-sm font-bold text-slate-700 mb-1.5">Fecha preferida *</label>
+            <input 
+              id="fecha" 
+              type="date" 
+              required
+              class="w-full px-4 py-3 border border-slate-300 rounded-xl text-slate-900 focus:outline-none focus:border-sky-600 focus:ring-2 focus:ring-sky-600/20"
+            >
+          </div>
+          <div>
+            <label for="horario" class="block text-sm font-bold text-slate-700 mb-1.5">Horario preferido</label>
+            <select 
+              id="horario"
+              class="w-full px-4 py-3 border border-slate-300 rounded-xl text-slate-900 bg-white focus:outline-none focus:border-sky-600 focus:ring-2 focus:ring-sky-600/20"
+            >
+              <option value="Mañana (9:00 a 13:00)">Mañana (9:00 a 13:00)</option>
+              <option value="Tarde (13:00 a 18:00)">Tarde (13:00 a 18:00)</option>
+              <option value="Noche (18:00 a 21:00)">Noche (18:00 a 21:00)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Notas adicionales -->
+        <div>
+          <label for="notas" class="block text-sm font-bold text-slate-700 mb-1.5">Notas adicionales (opcional)</label>
+          <textarea 
+            id="notas" 
+            rows="2" 
+            placeholder="Referencias de ubicación, método de pago o comentarios..."
+            class="w-full px-4 py-3 border border-slate-300 rounded-xl text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-sky-600 focus:ring-2 focus:ring-sky-600/20"
+          ></textarea>
+        </div>
+
+        <!-- Resumen de Total -->
+        <div class="flex items-center justify-between p-4 bg-sky-50 border border-sky-200/80 rounded-2xl">
+          <div>
+            <span class="block text-xs font-bold uppercase text-sky-700">Total estimado</span>
+            <span id="resumen-cantidad" class="text-xs text-slate-500">1 kit × $90 MXN</span>
+          </div>
+          <span id="total" class="text-2xl sm:text-3xl font-extrabold text-sky-700">$90 MXN</span>
+        </div>
+
+        <!-- Botón de Envío a WhatsApp -->
+        <button 
+          type="submit" 
+          class="w-full py-4 px-6 bg-[#25d366] hover:bg-[#20bd5a] text-white font-extrabold text-base sm:text-lg rounded-2xl shadow-lg shadow-emerald-500/30 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2 cursor-pointer"
+        >
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M19.11 17.2c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.15-.42-2.19-1.35-.81-.72-1.36-1.61-1.52-1.88-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.98 2.65 1.12 2.83c.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.56.58.65.21 1.25.18 1.72.11.52-.08 1.6-.65 1.83-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32zM16.05 3C9.4 3 4 8.38 4 15.02c0 2.64.86 5.09 2.31 7.08L4.8 28l6.1-1.59c1.91 1.05 4.1 1.65 6.45 1.65 6.65 0 12.05-5.38 12.05-12.02C29.4 8.38 22.7 3 16.05 3z"/>
+          </svg>
+          <span>Enviar pedido por WhatsApp</span>
+        </button>
+
+        <p class="text-xs text-center text-slate-500">
+          Se abrirá WhatsApp al número <strong>449 256 0788</strong> con todos los detalles de tu pedido listos.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Sección Preguntas Frecuentes (FAQ) -->
+  <section id="faq" class="py-20 bg-white border-t border-slate-200/80">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="text-sky-600 font-bold text-sm uppercase tracking-wider">Resolvemos tus dudas</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-2">Preguntas frecuentes</h2>
+      </div>
+
+      <div class="space-y-4">
+        <details class="group bg-slate-50 border border-slate-200/80 rounded-2xl p-5 open:bg-white open:shadow-md transition-all">
+          <summary class="flex items-center justify-between font-bold text-slate-900 cursor-pointer">
+            <span>¿Lo puedo subir a un avión en equipaje de mano?</span>
+            <svg class="w-5 h-5 text-sky-600 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            ¡Sí! El estuche es transparente y todos los líquidos incluidos (pasta dental y enjuague bucal) son menores a 100 ml, cumpliendo perfectamente con las normas de seguridad aeroportuaria para cabina.
+          </p>
+        </details>
+
+        <details class="group bg-slate-50 border border-slate-200/80 rounded-2xl p-5 open:bg-white open:shadow-md transition-all">
+          <summary class="flex items-center justify-between font-bold text-slate-900 cursor-pointer">
+            <span>¿El estuche es reutilizable?</span>
+            <svg class="w-5 h-5 text-sky-600 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            Totalmente. Está fabricado en material plástico flexible resistente e impermeable con cierre hermético zip. Cuando se terminen los consumibles, puedes rellenarlo fácilmente.
+          </p>
+        </details>
+
+        <details class="group bg-slate-50 border border-slate-200/80 rounded-2xl p-5 open:bg-white open:shadow-md transition-all">
+          <summary class="flex items-center justify-between font-bold text-slate-900 cursor-pointer">
+            <span>¿Hacen entregas a domicilio o en puntos medios?</span>
+            <svg class="w-5 h-5 text-sky-600 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            Sí, coordinamos entregas en puntos céntricos o envío directo según tu ubicación en Aguascalientes. Al enviar tu formulario por WhatsApp confirmamos la opción más cómoda para ti.
+          </p>
+        </details>
+
+        <details class="group bg-slate-50 border border-slate-200/80 rounded-2xl p-5 open:bg-white open:shadow-md transition-all">
+          <summary class="flex items-center justify-between font-bold text-slate-900 cursor-pointer">
+            <span>¿Venden por mayoreo para hoteles, clínicas o eventos?</span>
+            <svg class="w-5 h-5 text-sky-600 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            ¡Claro! Contamos con precios especiales por volumen para consultorios dentales, hoteles, Airbnb, empresas y eventos. Escríbenos directo al <strong>449 256 0788</strong> para cotizar.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="bg-slate-900 text-slate-400 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+      <div class="flex items-center gap-2">
+        <span class="font-extrabold text-lg text-white">Dent<span class="text-sky-400">Go</span> 🦷</span>
+        <span>&copy; 2026. Todos los derechos reservados.</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a 
+          href="https://api.whatsapp.com/send?phone=524492560788" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors"
+        >
+          WhatsApp: 449 256 0788
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a 
+    href="https://api.whatsapp.com/send?phone=524492560788&text=Hola%2C%20me%20interesa%20pedir%20un%20kit%20dental%20Dent%20Go" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    aria-label="Contactar por WhatsApp"
+    class="fixed right-5 bottom-5 w-14 h-14 rounded-full bg-[#25d366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-xl hover:scale-110 transition-transform z-50"
+  >
+    <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
+      <path d="M19.11 17.2c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.15-.42-2.19-1.35-.81-.72-1.36-1.61-1.52-1.88-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.98 2.65 1.12 2.83c.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.56.58.65.21 1.25.18 1.72.11.52-.08 1.6-.65 1.83-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32zM16.05 3C9.4 3 4 8.38 4 15.02c0 2.64.86 5.09 2.31 7.08L4.8 28l6.1-1.59c1.91 1.05 4.1 1.65 6.45 1.65 6.65 0 12.05-5.38 12.05-12.02C29.4 8.38 22.7 3 16.05 3z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts de funcionalidad: Buscador de imágenes y Calculadora de Pedido WhatsApp -->
+  <script>
+    // 1. Buscador automático de rutas/extensiones en GitHub para las imágenes
+    function resolverImagen(imgElement, nombreBase) {
+      if (!imgElement) return;
+      const rutas = [
+        `${nombreBase}.jpg`,
+        `img/${nombreBase}.jpg`,
+        `${nombreBase}.JPG`,
+        `img/${nombreBase}.JPG`,
+        `${nombreBase}.jpeg`,
+        `img/${nombreBase}.jpeg`,
+        `${nombreBase}.png`,
+        `img/${nombreBase}.png`,
+        `${nombreBase}.webp`,
+        `img/${nombreBase}.webp`
+      ];
+      let indice = 0;
+      imgElement.onerror = function () {
+        indice++;
+        if (indice < rutas.length) {
+          this.src = rutas[indice];
+        } else {
+          this.onerror = null;
+        }
+      };
+    }
+
+    resolverImagen(document.getElementById('hero-img'), 'kit-dentgo');
+    resolverImagen(document.getElementById('entrega-img'), 'entrega-kit');
+
+    // 2. Lógica de selección de pedido y envío de mensaje personalizado a WhatsApp
+    const WHATSAPP_NUMERO = "524492560788";
+    const PRECIO_UNITARIO = 90;
+
+    const inputCantidad = document.getElementById('cantidad');
+    const btnMenos = document.getElementById('btn-menos');
+    const btnMas = document.getElementById('btn-mas');
+    const spanTotal = document.getElementById('total');
+    const spanResumen = document.getElementById('resumen-cantidad');
+    const inputFecha = document.getElementById('fecha');
+    const formPedido = document.getElementById('form-pedido');
+
+    // Establecer fecha mínima al día de hoy
+    const hoy = new Date().toISOString().split('T')[0];
+    inputFecha.min = hoy;
+    inputFecha.value = hoy;
+
+    function actualizarTotal() {
+      let n = parseInt(inputCantidad.value, 10);
+      if (isNaN(n) || n < 1) n = 1;
+      if (n > 50) n = 50;
+      inputCantidad.value = n;
+
+      const totalCalculado = n * PRECIO_UNITARIO;
+      spanTotal.textContent = `$${totalCalculado.toLocaleString('es-MX')} MXN`;
+      spanResumen.textContent = `${n} ${n === 1 ? 'kit' : 'kits'} × $${PRECIO_UNITARIO} MXN`;
+    }
+
+    btnMenos.addEventListener('click', () => {
+      const actual = parseInt(inputCantidad.value, 10) || 1;
+      if (actual > 1) {
+        inputCantidad.value = actual - 1;
+        actualizarTotal();
+      }
+    });
+
+    btnMas.addEventListener('click', () => {
+      const actual = parseInt(inputCantidad.value, 10) || 1;
+      if (actual < 50) {
+        inputCantidad.value = actual + 1;
+        actualizarTotal();
+      }
+    });
+
+    inputCantidad.addEventListener('input', actualizarTotal);
+
+    formPedido.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const cantidad = Math.max(1, parseInt(inputCantidad.value, 10) || 1);
+      const total = cantidad * PRECIO_UNITARIO;
+      const nombre = document.getElementById('nombre').value.trim();
+      const direccion = document.getElementById('direccion').value.trim();
+      const fecha = inputFecha.value;
+      const horario = document.getElementById('horario').value;
+      const notas = document.getElementById('notas').value.trim();
+
+      const lineasMensaje = [
+        `Hola *Dent Go* 🦷, quiero agendar un pedido:`,
+        ``,
+        `• *Cantidad:* ${cantidad} ${cantidad === 1 ? 'kit' : 'kits'}`,
+        `• *Total:* $${total} MXN`,
+        `• *Nombre:* ${nombre}`,
+        `• *Entrega:* ${direccion}`,
+        `• *Fecha:* ${fecha}`,
+        `• *Horario:* ${horario}`
+      ];
+
+      if (notas) {
+        lineasMensaje.push(`• *Notas:* ${notas}`);
+      }
+
+      const textoCodificado = encodeURIComponent(lineasMensaje.join('\n'));
+      const urlWhatsApp = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMERO}&text=${textoCodificado}`;
+      
+      window.open(urlWhatsApp, '_blank', 'noopener,noreferrer');
+    });
+  </script>
+
+</body>
+</html>
